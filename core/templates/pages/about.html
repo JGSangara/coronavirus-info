@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %} 
+
+{% block title %} Data {% endblock title %} 
+
+{% block content %}
+
+
+<div class="container-fluid mt-3 list-group-flush">
+    <p>This project was made possible from the following resources:</p>
+    <h2>Opensource Project</h2>
+    <p>This project was based on this Opensource project:</p>
+    <li class="list-group-item"><a href="https://github.com/BrianRuizy/covid19-dashboard">Covid-19 Dashboard</a></li>
+</div>
+
+<div class="container-fluid pt-5 bg-secondary">
+    <h2>Data</h2>
+    <p>Data sources used throughout the project.</p>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019?gclid=Cj0KCQjwg8n5BRCdARIsALxKb95mm6ZjJlZs1OAyoBaQKtAkSzLVmkSgoiccOz_KnYOJw0D7cHl1-4MaAvYSEALw_wcB">World Health Organization</a></li>
+        <li class="list-group-item"><a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins</a></li>
+        <li class="list-group-item"><a href="https://github.com/owid/covid-19-data/tree/master/public/data">Our World In Data</a></li>
+        <li class="list-group-item"><a href="https://github.com/nytimes/covid-19-data">New York Times</a></li>
+    </ul>
+
+</div>
+{% include "includes/footer.html" %} 
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %} {% endblock javascripts %}
