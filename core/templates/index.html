@@ -1,7 +1,17 @@
-{% extends 'layouts/base.html' %} {% load humanize %} {% block title %} Home {% endblock title %}
+{% extends 'layouts/base.html' %} 
+
+{% load humanize %} 
+
+{% block title %} Home {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
-{% block stylesheets %}{% endblock stylesheets %} {% block content %} {% include "includes/header.html" %}
+{% block stylesheets %}
+
+{% endblock stylesheets %} 
+
+{% block content %} 
+
+{% include "includes/header.html" %}
 
 <div class="container-fluid mt--7 bg-secondary">
     <div class="row mb-5">
@@ -100,7 +110,9 @@
 </div>
 
 
-{% include "includes/footer.html" %} {% endblock content %}
+{% include "includes/footer.html" %} 
+
+{% endblock content %}
 
 <!-- Specific JS goes HERE -->
 {% block javascripts %}
